@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Biblioteca de las cosas">
+    <meta name="description" content="Establecimiento de préstamo de objetos de segunda mano">
+    <meta name="keywords" content="biblioteca, cosas, reciclaje, reutilizable, segunda mano, préstamo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Source+Serif+Pro:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"> <!--Libreria para que en todos los navegadores se respete el css del código-->
+    <script src="https://kit.fontawesome.com/9825ebe906.js"></script>
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>Biblioteca de las cosas</title>
+</head>
+
+
+<body>
+
+    <header class="topheader" id="navbar_header"> <!-- Etiqueta para la cabecera -->
+        <div class="mob_menu">
+            <a href="#" class="logo"><img src="images/logo.png" alt="logotipo"></a>
+
+            <a href="#" class="mob_icon"><img width="30" src="images/search-svgrepo-com.svg" alt="search icon"></a>
+
+            <a href="#" class="mob_icon"><img width="30" src="images/flag-svgrepo-com.svg" alt="language icon"></a>
+            
+            <a href="#navbar_header" class="open mob_icon"><img width="30" src="images/menu-botton.svg" alt="open menu"></a>
+            
+            <a href="#" class="close mob_icon"><img width="30" src="images/x-botton.svg" alt="close menu"></a>
+        </div> 
+        <ul class="sites_menu" > <!-- Lista no numerada -->
+            <!-- items de la lista -->
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="catalogo.html">CATÁLOGO</a></li>
+            <li><a href="donacion.html">DONACIÓN</a></li>
+            <li><a href="#">CONÓCENOS</a></li>
+            <li><a href="#">CONTACTO</a></li>
+            <li class="actual_site"><a href="acceso.html"><img width="50" src="images/user-svgrepo-com.svg" alt="icono de acceso o registro de usuarios"></a></li>
+        </ul>
+
+           <!-- <ul class="lang_menu">
+                <li>Español</li>
+                <li>English</li>
+            </ul> 
+            -->
+    </header>
+
+    <div class="container columns-2">
+        <article>
+            <h1>iniciar sesión</h1>
+
+            <div class="card_box">
+                <form action="URL">
+                    <label for="name">Nombre de usuario <span class="links">*</span></label><br>
+                    <input type="text" id="name" name="name" placeholder="Ejemplo : Susanagrl"><br><br>
+
+                    <label for="password">Contraseña <span class="links">*</span></label><br>
+                    <input type="text" id="password" name="password" placeholder="Ejemplo : xhj578"><br><br><br>
+                    
+
+                    <span class="switch">
+                        <input type="checkbox" id="toggle">
+                        <label for="toggle"></label>
+                    </span>
+                    <label for="toggle">Mantener la sesión activa</label><br><br>
+
+                    <button type="submit" class="submit_button">Entrar</button><br>
+
+                    <a href="#" class="links">¿ Has olvidado tu contraseña ?</a><br><br>
+                </form>
+            </div>
+        </article>
+
+
+        <article>
+            <h1>regístrate</h1>
+
+            <div class="card_box">
+                <form action="URL">
+                    <label for="register_name">Nombre y apellido <span class="links">*</span></label><br>
+                    <input type="text" id="register_name" name="register_name" placeholder="Ejemplo : Susanagrl"><br><br>
+
+                    <label for="register_email">Correo electrónico<span class="links">*</span></label><br>
+                <input type="email" id="register_email" name="register_email" placeholder="Ejemplo : susanagranda@gmail.com"><br><br>
+
+                    <label for="register_password">Contraseña <span class="links">*</span></label><br>
+                    <input type="text" id="register_password" name="register_password" placeholder="Ejemplo : xhj578"><br><br><br>
+
+                    <span class="switch">
+                        <input type="checkbox" id="register_toggle">
+                        <label for="register_toggle"></label>
+                    </span>
+                    <label for="register_toggle">Acepto la Política de Privacidad</label><br><br>
+
+                    <button type="submit" class="submit_button">Unirme</button>
+                </form>
+
+            
+            </div>
+        </article>
+    </div>
+
+
+    <footer>
+        <div>
+
+            <ul class="more_info">
+                <li class="title">Mas información:</li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Terminos de uso</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+            <ul class="contact">
+                <li class="title">Contacto: </li>
+                <li><a href="#"><i class="fa-solid fa-location-dot"></i> Av. Mare de Deu de les Neus 56, 08031 - Barcelona</a></li>
+                <li><a href="#"><i class="fa-solid fa-envelope"></i> lybraryofthings@qmail.com</a></li>
+                <li><a href="#"><i class="fa-solid fa-phone"></i> 935 555 555</a></li>
+            </ul>
+
+            <br>
+            <ul class="follow">
+                <li class="hide title">Siguenos en:</li>
+
+                <li>
+                    <a href="#"><img width="50" src="images/facebook-internet-media-svgrepo-com.svg" alt="icono de Facebook"></a> 
+                    <a href="#"><img width="50" src="images/instagram-internet-media-svgrepo-com.svg" alt="icono de Instagram"></a>
+                    <a href="#"><img width="50" src="images/internet-media-social-11-svgrepo-com.svg" alt="icono de Youtube"></a>
+                </li>
+            </ul>
+        </div>
+
+        <p class="copyright">©2022 BIBLIOTECA DE LAS COSAS</p>
+    </footer>
+</body>
+</html>
